@@ -1,0 +1,10 @@
+{
+  "name": "ai-guru",
+  "description": "Adaptive learning tutor for any subject — personalized curriculum, level diagnostics, quizzes, and four goal modes including full exam prep.",
+  "version": "1.0.0",
+  "author": { "name": "Dhruv Dubey", "url": "https://github.com/Dhruvdubey17" },
+  "homepage": "https://github.com/Dhruvdubey17/ai-guru",
+  "repository": "https://github.com/Dhruvdubey17/ai-guru",
+  "license": "PolyForm-Noncommercial-1.0.0",
+  "keywords": ["learning", "tutor", "education", "teaching", "exam-prep", "study", "curriculum", "quiz"]
+}

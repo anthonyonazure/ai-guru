@@ -1,0 +1,15 @@
+{
+  "name": "ai-guru",
+  "owner": { "name": "Dhruv Dubey" },
+  "description": "Adaptive learning tutor for any subject.",
+  "plugins": [
+    {
+      "name": "ai-guru",
+      "source": ".",
+      "description": "Adaptive learning tutor for any subject — four goal modes including full exam prep.",
+      "license": "PolyForm-Noncommercial-1.0.0",
+      "category": "Education",
+      "tags": ["learning", "tutor", "education", "exam-prep"]
+    }
+  ]
+}
