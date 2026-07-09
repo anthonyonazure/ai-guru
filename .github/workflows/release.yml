@@ -1,0 +1,37 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate manifests
+        run: |
+          jq empty .claude-plugin/plugin.json
+          jq empty .claude-plugin/marketplace.json
+          PLUGIN_VERSION=$(jq -r .version .claude-plugin/plugin.json)
+          TAG_VERSION="${GITHUB_REF_NAME#v}"
+          if [ "$PLUGIN_VERSION" != "$TAG_VERSION" ]; then
+            echo "plugin.json version ($PLUGIN_VERSION) does not match tag ($TAG_VERSION)" >&2
+            exit 1
+          fi
+
+      - name: Build skill package
+        run: ./scripts/package-skill.sh
+
+      - name: Create release with skill asset
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" dist/ai-guru.skill \
+            --title "$GITHUB_REF_NAME" \
+            --generate-notes

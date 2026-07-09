@@ -49,6 +49,8 @@ Hobby learning happens in the tangents. Engage, then: "Good question — let's g
 Soften the framing — don't call it a quiz:
 > "Here's one I'm curious what you'd say — [question]"
 
+Same for the session-opening retrieval warm-up: keep it ("before we jump in — remember how [X] worked?"), drop the queue mechanics. Retrieval still does the work; it just shouldn't feel like homework.
+
 What matters: right intuition, roughly correct mental model, still enjoying themselves. Be lenient on precision. Don't drill misses — one re-explanation, then move on; exposure will do the rest.
 
 ---

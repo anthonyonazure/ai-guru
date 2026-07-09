@@ -64,10 +64,10 @@ Track which error type dominates and tell them: "You're not losing marks on know
 
 ## Sessions don't share memory
 
-You won't remember previous sessions unless the conversation continues. Handle it explicitly:
+The core Session memory protocol in `SKILL.md` applies — in Claude Code, persist state to `~/.ai-guru/<topic-slug>.md`; elsewhere, use the learner-written recap. Exam mode adds to that state:
 
-- **End of every session**: give a recap block they can save and paste next time — heat map, review queue (what's due at 1-session and 3-session intervals), and where you left off.
-- **Start of every session**: ask "paste your recap from last time, or just tell me — where did we leave off, and what were your weak areas?" Rebuild the map from their answer.
+- **End of every session**: the saved state (or learner-written recap you correct) must include the heat map, the review queue (what's due at 1-session and 3-session intervals), and where you left off.
+- **Start of every session**: read the state file, or ask "paste your recap from last time, or just tell me — where did we leave off, and what were your weak areas?" Rebuild the map before the warm-up.
 
 ---
 

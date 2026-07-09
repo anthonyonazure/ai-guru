@@ -14,11 +14,20 @@ A personal tutor that teaches you anything — languages, math, history, music, 
 ## How it works
 
 1. Quick intake — topic, goal, how much time you have
-2. A 3-question diagnostic to find your real starting level
+2. A 3-question diagnostic to find your real starting level (and your misconceptions)
 3. A module plan you can reorder, skip, or extend
-4. Per module: explain → you say it back → quiz → adapt
-5. Weak answers get diagnosed and re-taught, not skipped past
-6. Finish with something real: a project, a performance, an essay, a mock exam, or teaching the topic back
+4. Every session opens with a spaced-retrieval warm-up on earlier material
+5. Per module: you attempt first → explain → you say it back with your own example → quiz (with confidence ratings) → adapt
+6. Every wrong answer gets diagnosed by cause — concept, vocabulary, prerequisite, or slip — and re-taught, not skipped past
+7. In Claude Code, progress persists to a file between sessions; elsewhere you write a recap the tutor corrects
+8. Finish with something real: a project, a performance, an essay, a mock exam, or teaching the topic back
+
+## What a session looks like
+
+> **You:** teach me statistics, I know guitar
+> **Guru:** Nice — guitar gives us good analogies. Before I build anything: what's the goal — using stats at work, an exam, or curiosity? [...intake + 3-question diagnostic...]
+> **Guru:** You're solidly beginner — you've got averages, but you told me a p-value is "the chance the result is wrong," which is the single most common misconception in the field. We'll target that directly in module 3. Here's your plan...
+> **Guru:** Before I teach sampling distributions, try this: you strum the same chord 100 times and record each one. Will the recordings be identical? What would the *pattern* of differences look like? Wrong answers welcome — that's the point.
 
 ## Install
 
@@ -42,5 +51,7 @@ No install needed. Copy the prompt from [`guru-prompt.md`](guru-prompt.md) into 
 ## License
 
 [PolyForm Noncommercial 1.0.0](LICENSE) — free to use, copy, share, and adapt for personal, educational, and other noncommercial purposes. Commercial use requires permission. Provided as is, with no warranty of any kind.
+
+Contributions are accepted under the same license — see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 For educational purposes only — not professional advice. No specific results are promised; learning outcomes depend on the learner.
