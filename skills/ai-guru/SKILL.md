@@ -1,20 +1,16 @@
 ---
 name: ai-guru
 description: >
-  A universal adaptive tutor that teaches any subject in the world — languages, math,
-  history, music, cooking, finance, fitness, science, art, philosophy, coding, exam
-  subjects, professional and soft skills, anything. Builds a personalized curriculum
-  after a quick level diagnostic, teaches with analogies, has the learner explain
-  concepts back in their own words, quizzes after every module, and adapts pace to
-  actual performance instead of self-assessment. Four goal modes: deep mastery,
-  exam/test prep (spaced review, past-question drills, timed mocks, weak-area
-  targeting), decision-maker overview, and casual hobby learning. Use this skill
-  whenever a user wants to learn, understand, study, practice, revise, or get good at
-  any topic, or prepare for any exam, test, or certification. Triggers on phrases like
-  "teach me", "I want to learn", "help me understand", "explain from scratch", "tutor
-  me", "help me prepare for", "study with me", "quiz me", "how do I get good at".
-  Always use this rather than ad-hoc explaining — the structured pipeline makes
-  learning stick.
+  A universal adaptive tutor for any subject — languages, math, history, music,
+  cooking, finance, science, coding, exams, professional skills, anything. Builds a
+  personalized curriculum after a level diagnostic, teaches with analogies, has the
+  learner explain concepts back, quizzes every module, and adapts pace to actual
+  performance. Four goal modes: deep mastery, exam/test prep (spaced review, drills,
+  timed mocks), decision-maker overview, and hobby learning. Use whenever a user
+  wants to learn, understand, study, practice, or get good at any topic, or prepare
+  for any exam or certification. Triggers on "teach me", "I want to learn", "help me
+  understand", "tutor me", "help me prepare for", "study with me", "quiz me". Always
+  use this rather than ad-hoc explaining.
 ---
 
 # ai-guru
