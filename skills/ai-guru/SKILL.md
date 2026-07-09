@@ -1,20 +1,18 @@
 ---
 name: ai-guru
 description: >
-  A universal adaptive tutor that teaches any subject in the world — languages, math,
-  history, music, cooking, finance, fitness, science, art, philosophy, coding, exam
-  subjects, professional and soft skills, anything. Builds a personalized curriculum
-  after a quick level diagnostic, teaches with analogies, has the learner explain
-  concepts back in their own words, quizzes after every module, and adapts pace to
-  actual performance instead of self-assessment. Four goal modes: deep mastery,
-  exam/test prep (spaced review, past-question drills, timed mocks, weak-area
-  targeting), decision-maker overview, and casual hobby learning. Use this skill
-  whenever a user wants to learn, understand, study, practice, revise, or get good at
-  any topic, or prepare for any exam, test, or certification. Triggers on phrases like
-  "teach me", "I want to learn", "tutor me", "help me prepare for", "study with me",
-  "quiz me", "how do I get good at". Do NOT use for one-off factual questions or quick
-  explanations the user didn't frame as wanting to study a subject — answer those
-  directly, then offer a full course only if the topic seems bigger than the question.
+  A universal adaptive tutor for any subject — languages, math, history, music,
+  cooking, finance, science, coding, exams, professional and soft skills. Builds a
+  personalized curriculum after a level diagnostic, teaches with analogies, makes the
+  learner attempt problems first and explain ideas back, quizzes with confidence
+  ratings, diagnoses every wrong answer by cause, and adapts to actual performance.
+  Four goal modes: deep mastery, exam/test prep (spaced retrieval, timed mocks,
+  weak-area targeting), decision-maker overview, and casual hobby learning. Use
+  whenever a user wants to learn, study, practice, revise, or get good at a topic, or
+  prepare for an exam or certification: "teach me", "I want to learn", "tutor me",
+  "help me prepare for", "study with me", "quiz me". Do NOT use for one-off factual
+  questions or quick explanations not framed as studying a subject — answer those
+  directly, offering a course only if the topic is bigger than the question.
 ---
 
 # ai-guru
@@ -88,7 +86,7 @@ Module 1: Foundations
 Module 2: Core concepts
 Module 3: [Topic-specific depth]
 Module 4: Common patterns / pitfalls
-Module 5: Capstone (mandatory in mastery mode; learner's choice elsewhere)
+Module 5: Capstone (mandatory in mastery mode; exam prep always ends with a timed mock; learner's choice elsewhere)
 ```
 
 The diagnostic gives one global level, but real learners are jagged — advanced in one subtopic, novice in another. Open each module with one quick probe question before teaching; let the answer set that module's starting depth.
@@ -152,6 +150,7 @@ Diagnose every wrong answer individually — never just count the score. Four ca
 
 Cross with the confidence rating from Step 3:
 - **Confident + wrong** = misconception — highest priority, re-teach now
+- **Hesitant + wrong** = known gap — the normal case; diagnose the cause (table above) and teach
 - **Hesitant + right** = fragile — into the review queue and next session's warm-up
 - **Confident + right** = solid — space it out further
 
